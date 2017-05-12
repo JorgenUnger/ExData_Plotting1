@@ -20,7 +20,7 @@ hpc <- hpc[(hpc$Date == "1/2/2007" | hpc$Date == "2/2/2007"),]
 hpc$datetime <- strptime(paste(hpc$Date, hpc$Time), "%d/%m/%Y %H:%M:%S")
 
 #Create Plot4
-png(filename = "Plot4.png", width = 480, height = 480, units = "px")
+png(filename = "Plot4.png", width = 480, height = 480, units = "px", bg = "transparent")
 #If not English local settings, you may need to uncomment a run Sys.setlocale code below to get x labels correct. 
 #If that the case you also need to uncomment code at the end of this file to restore locale settings. 
 #Sys.setlocale("LC_ALL","English")
